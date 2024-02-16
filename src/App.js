@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import LoginForm from './components/Login/LoginForm';
+import SignupForm from './components/Signup/SignupForm';
+import Dashboard from './components/Dashboard';
+import { useState } from 'react';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/loginForm" render={(props) => <LoginForm {...props} onLogin={handleLogin} />} />
+          <Route path="/signupForm" component={SignupForm} />
+          <Route path="/dashboard">
+            {isLoggedIn ? <Dashboard /> : <Redirect to="/loginForm" />}
+          </Route>
+          <Redirect to="/loginForm" />
+        </Switch>
+      </Router>
     </div>
   );
 }

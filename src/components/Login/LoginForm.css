@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+#AllSelector{
+    text-align: center;
+    
+    
+  }
+
+  #AllSelector.href{
+    color: #769fc9;
+  }
+  
+.role-select, .role-label {
+    width: calc(100% - 20); /* Adjust the width as needed */
+    align-self: center;
+    text-align: center;
+    
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+    
+}
+  
+.Wrapper{
+    position: absolute;
+    align-self: center;
+    
+}
+
+  
+#logSection {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the form vertically */
+    align-items: center; /* Center the form horizontally */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    border-style: solid;
+    border-color: #007bff;
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.3);
+     
+    
+}
+
+#logSection {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+   
+}
+
+#logform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+   
+    
+}
+
+#logbutton {
+    padding: 0.5rem;
+    width: 200px;
+    align-self: center;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    width: 100%; /* Full width for input fields */
+    padding: 0.75rem; /* Increased padding */
+    margin-top: 0.5rem; /* Increased top margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 0.5rem; /* Rounded corners */
+  }
+
+  #logbutton:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+
+
+#loglabel {
+    margin-top: 1rem;
+    color: #007bff;
+}
+
+
+
+.AppSelector {
+    position:relative;
+    border-style:solid;
+    border-width: 2px; /* Border width */
+    border-color: #007bff; /* Border color */
+    border-radius: 10px; /* Border radius */
+    margin-top: auto;
+    box-sizing: border-box;
+    align-self: center; 
+    width: 90%; /* Set width to 90% of viewport width */
+    max-width: 500px; /* Set maximum width to prevent form from becoming too wide */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 1rem 0.5rem;
+    color: #007bff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow */
+    background-color:#d5e3f2;
+}
+
+  a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #fff;
+    
+}
+
+#logh1{
+    text-align: center;
+    color:#007bff;
+}
+
+
+
+
+#username, 
+#password,
+#loginput,
+#confirm_pwd,
+#role,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  margin-top: 0.5rem; /* Increased top margin */
+    border: 1px solid #ccc; /* Border */
+  border-radius: 0.5rem;
+  width: 400px; /* Full width for input fields */
+ 
+}
+
+label {
+    margin-top: 1rem;
+    color: #007bff;
+    font-size: 22px;
+  }
+
+
+  
